@@ -6,7 +6,7 @@ import { LoadingBar } from 'quasar';
 export default boot(async (/* { app, router, ... } */) => {
   // something to do
   LoadingBar.setDefaults({
-    color: 'yellow',
+    color: '#edb887',
     size: '4px',
   });
 });

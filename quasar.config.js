@@ -111,13 +111,14 @@ module.exports = configure(function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['LocalStorage', 'Loading', 'LoadingBar', 'Meta'],
+      plugins: ['LocalStorage', 'Loading', 'LoadingBar', 'Meta', 'Notify'],
       config: {
-        // loading: {
-        //   delay: 0,
-        //   message: '로딩중~!!!',
-        //   spinnerSize: 40,
-        // },
+        notify: {
+          position: 'top-right',
+          timeout: 1000,
+          textColor: 'white',
+          actions: [{ icon: 'close', color: 'white' }],
+        },
       },
     },
 
